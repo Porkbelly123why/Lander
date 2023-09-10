@@ -4,56 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Keyboard Shop</title>
-<style>
-.dropbtn {
-background: linear-gradient(45deg, #ff000a, #ff6a00, #ffeb00, #00ff05, #000dff, #8600ff);
-  background-size: 600% 600%;
-  -webkit-animation: rainbow 10s ease infinite;
-  -moz-animation: rainbow 10s ease infinite;
-  animation: rainbow 10s ease infinite;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-@keyframes rainbow {
-  0%{background-position:0% 82%}
-  50%{background-position:100% 19%}
-  100%{background-position:0% 82%}
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #ff000a;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ff000a}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #ff000a;
-}
+    <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -112,17 +63,10 @@ background: linear-gradient(45deg, #ff000a, #ff6a00, #ffeb00, #00ff05, #000dff, 
     </style>
 </head>
 <body>
-    <div class="dropdown">
-  <button class="dropbtn">MENU</button>
-  <div class="dropdown-content">
-  <a href="index.html">Home</a>
-  <a href="location.html">Location</a>
-  <a href="about.html">About</a>
-  </div>
     <div class="keyboard-container">
         <div class="keyboard">
             <h1><u>Royal Kludge 61</u></h1>
-            <img src="Lander/Images/Rk61.jpeg" alt="Royal Kludge 61 Keyboard">
+            <img src="Images/Rk61.jpeg" alt="Royal Kludge 61 Keyboard">
             <p><u>Price: $1,699</u></p>
         </div>
         
@@ -134,9 +78,16 @@ background: linear-gradient(45deg, #ff000a, #ff6a00, #ffeb00, #00ff05, #000dff, 
         
         <div class="keyboard">
             <h1><u>Royal Kludge 71</u></h1>
-            <img src="Lander/Images/Rk71.jpeg" alt="Royal Kludge 71 Keyboard">
+            <img src="Images/Rk71.jpeg" alt="Royal Kludge 71 Keyboard">
             <p><u>Price: $2,000</u></p>
         </div>
+    </div>
+    
+    <div class="navigation">
+        <a href="index.html"><img src="Images/home.png" width="100" height="auto"></a>
+        <a href="gallary.html"><img src="Images/gallery.png" width="100" height="auto"></a>
+        <a href="about.html"><img src="Images/info.png" width="100" height="auto"></a>
+        <a href="location.html"><img src="Images/location.png" width="100" height="auto"></a>
     </div>
 </body>
 </html>
