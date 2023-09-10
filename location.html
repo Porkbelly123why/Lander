@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<style>
+.dropbtn {
+background: linear-gradient(45deg, #ff000a, #ff6a00, #ffeb00, #00ff05, #000dff, #8600ff);
+  background-size: 600% 600%;
+  -webkit-animation: rainbow 10s ease infinite;
+  -moz-animation: rainbow 10s ease infinite;
+  animation: rainbow 10s ease infinite;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+@keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ff000a;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ff000a}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ff000a;
+}
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url("Images/test.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+</style>
+<body>
+        <div class="dropdown">
+  <button class="dropbtn">MENU</button>
+  <div class="dropdown-content">
+  <a href="index.html">Home</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="about.html">about</a>
+  </div>
+</body>
+</html>
